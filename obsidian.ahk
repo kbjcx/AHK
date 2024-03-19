@@ -5,9 +5,9 @@
         Send "^e"
     }
 
-    Tab:: {
-        Send "^{Tab}"
-    }
+    ; Tab:: {
+    ;     Send "^{Tab}"
+    ; }
 
     CapsLock & m:: {
         Send "^!+m"

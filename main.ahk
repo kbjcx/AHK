@@ -1,10 +1,8 @@
 #Requires AutoHotkey v2.0
 #Usehook
 
-
 #include ./obsidian.ahk
 ; #InstallKeybdHook
-
 
 ; 关闭CapsLock
 SetCapsLockState "AlwaysOff"
@@ -13,8 +11,8 @@ SetCapsLockState "AlwaysOff"
 +CapsLock::CapsLock
 
 ^CapsLock::
-!CapsLock::
-{ 
+!CapsLock:: {
+
 }
 
 CapsLock::{
@@ -37,6 +35,11 @@ CapsLock & 3:: {
     SendText "#include "
 }
 
+; 输出!=，便于编程
+CapsLock & 1:: {
+    SendText "!="
+}
+
 ; 没有Alt则删除光标前的所有文字, 有Alt则删除整行文字
 CapsLock & BackSpace::
 {
@@ -49,7 +52,7 @@ CapsLock & BackSpace::
 ; 打开quicker, Ctrl+Alt+Shift+q
 CapsLock & q::
 {
-    Send "^+!{q}"
+    Send "^+!q"
 }
 
 ; 在行中直接换行
