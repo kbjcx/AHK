@@ -77,3 +77,8 @@ CapsLock & ]::
 CapsLock & s:: {
     Send "+^!s"
 }
+
+; 打开关闭Obsidian
+CapsLock & o:: {
+    Send "+^!o"
+}
