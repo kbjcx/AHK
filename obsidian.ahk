@@ -16,4 +16,16 @@
     CapsLock & a:: {
         Send "^!+a"
     }
+
+    CapsLock & r:: {
+        Send "^!+r"
+    }
+
+    CapsLock & Left:: {
+        Send "!^+{Left}"
+    }
+
+    CapsLock & Right:: {
+        Send "!^+{Right}"
+    }
 #HotIf
